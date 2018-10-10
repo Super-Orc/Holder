@@ -162,7 +162,6 @@ private[deploy] class Master(val rpcEnv: RpcEnv,
     heartBeatScheduler.scheduleAtFixedRate(new Runnable {
       override def run(): Unit = Utils.tryLogNonFatalError {
         //                println(createDateFormat.format(new Date) + "->" + containerMap)
-        //        println(containerMap)
         //        println(masterHost + ":" + masterPort)
         //        containerMap.values().map(a => (a.name, a.executor.workerThread)).foreach(println(_))
       }
